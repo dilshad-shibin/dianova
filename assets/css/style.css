@@ -316,6 +316,13 @@ img {
     color: #e03737 !important;
 }
 
+@media (min-width: 1200px){
+    .container {
+        max-width: 1180px;
+    }
+}
+
+
 
 /* ******************************
 :: 5.0 PRELOADER AREA CSS
@@ -471,8 +478,7 @@ img {
 }
 
 .navbar .navbar-nav .nav-link-btn:hover{
-    color: #fff !important;
-    background-color: #660e0f;
+    color: #191b16 !important;
 }
 
 .navbar.navbar-light .navbar-nav .nav-link {
@@ -531,9 +537,9 @@ img {
 
 /*NAVBAR DARK*/
 .navbar-dark .navbar-nav .nav-link {
-    color: #660e0f;
+    color: #191b16;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -542,7 +548,7 @@ img {
 }
 
 .navbar-dark .navbar-nav .nav-link-btn {
-    background: #d31f3b;
+    background: #f58220;
     color: #fff;
     letter-spacing: 1px;
     font-weight: 500;
@@ -561,9 +567,9 @@ img {
 }
 
 .navbar-dark.navbar-sticky-on .navbar-nav .nav-link-btn{
-    background-color: #d31f3b;
+    /* background-color: #d31f3b; */
     color: #fff; 
-    margin-top: 12px;
+    /* margin-top: 12px; */
 }
 
 .navbar-dark.navbar-sticky-on .navbar-nav .nav-link-btn:hover{
@@ -596,13 +602,14 @@ img {
 
 .navbar-expand-lg .navbar-nav li:last-child{
     margin-left: 10px;
-    background: #d31f3b;
+    background: #f58220;
     max-width: 150px;
+    padding: 18px;
 }
 
 .navbar-dark .navbar-nav .nav-link:focus, 
 .navbar-dark .navbar-nav .nav-link:hover{
-    color: #d31f3b;
+    color: #f58220;
 }
 
 .navbar-brand{
@@ -615,7 +622,7 @@ img {
 }
 
 .navbar .navbar-nav .nav-item{
-    padding: 22px 10px;
+    padding: 18px 8px;
 }
 
 .navbar .navbar-nav .nav-link{
@@ -623,7 +630,7 @@ img {
 }
 
 .navbar-dark .navbar-nav .nav-link{
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .navbar-expand-lg .navbar-nav li:last-child a{
@@ -635,6 +642,25 @@ img {
     margin-right: 12px;
 }
 
+
+.banner-overlay{
+    display: none;
+}
+
+@media(max-width: 991px){
+    .banner-overlay{
+        display: block !important;
+        position: absolute;
+        background: #24662473;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.9;
+    }
+}
+
+
 /* ******************************
 :: 8.0 WELCOME AREA CSS
 ****************************** */
@@ -643,11 +669,11 @@ img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 785px;
 }
 
 .welcome-intro{
-    margin-top: 50px;
+    margin-top: -50px;
 }
 
 .welcome-intro h3{
@@ -657,7 +683,7 @@ img {
 }
 
 .welcome-intro h1{
-    color: #fc425f;
+    color: #111359;
     font-size: 65px;
     font-weight: 700;
     max-width: 550px;
@@ -676,19 +702,18 @@ img {
 }
 
 .intro-btn a{
-    background: #d31f3b;
+    background: #f58220;
     color: #fff;
     letter-spacing: 1px;
     font-weight: 500;
-    border-radius: 50px;
-    padding: 15px 40px !important;
+    padding: 15px 62px !important;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
     transition: all .3s ease;
 }
 
 .intro-btn a:hover{
-    background-color: #660e0f;
+    background-color: #111359;
 }
 
 .banner-slider .owl-nav button{
@@ -727,6 +752,25 @@ img {
     color: #fff !important;
 }
 
+.welcome-intro .intro-head{
+    display: flex;
+    max-width: 300px;
+    align-items: center;
+}
+
+.welcome-intro .intro-head h2{
+    color: #f58220;
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: 80px;
+}
+
+.welcome-intro .intro-head p{
+    color: #111359;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
 
 /* ******************************
 :: 09.0  POPUP AREA 
@@ -915,7 +959,6 @@ img {
 ****************************** */
 .footer-area {
     background-color: #660e0f;
-    margin-top: -105px;
     z-index: 10;
 }
 
@@ -1028,5 +1071,62 @@ img {
 
 /* ******************************
 :: 11.0 ABOUT AREA CSS
+****************************** */
+.about-area .head h3{
+    color: #f58220;
+    font-weight: 500;
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+
+.about-area .head h2{
+    color: #191b16;
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-size: 45px;
+}
+
+.counter-box {
+    flex: 0 0 25%;
+    border: 1px solid #ddd;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.counter-box .head-count {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.counter-box h2 {
+    color: #f58220;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-size: 42px;
+    line-height: 1;
+}
+
+.counter-box .head-count span {
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-size: 42px;
+    line-height: 1;
+    color: #f58220;
+}
+
+.counter-box p {
+    color: #191b16;
+    font-size: 21px;
+    letter-spacing: 1px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ******************************
+:: 12.0  AREA CSS
 ****************************** */
 

@@ -87,6 +87,12 @@
         }, 1000);
     });
 
+    // :: 9.0 COUNTERUP ACTIVE CODE
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+
     // :: 6.0 AOS ACTIVE CODE
     AOS.init();
 
@@ -213,10 +219,10 @@
         });
 
     // :: 9.0 COUNTERUP ACTIVE CODE
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
+    // $('.counter').counterUp({
+    //     delay: 10,
+    //     time: 1000
+    // });
     
     // :: 11.0 NAV TAB HOVER CHANGE IMAGES CODE
     $(".nav-tab-link").hover(function(){

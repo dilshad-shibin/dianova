@@ -4,6 +4,16 @@
 /* ******************************
 :: 1.0 COMMON CSS
 ****************************** */
+@media(max-width: 1440px){
+    .navbar-dark .navbar-nav .nav-link{
+        font-size: 14px;
+    }
+    .navbar-expand-lg .navbar-nav li:last-child{
+        padding: 16px 18px;
+    }
+
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .ptb_180 {
         padding: 130px 0;
@@ -134,7 +144,14 @@
     }
 }
 
-@media (max-width: 991px) {
+@media(min-width: 991px) and (max-width: 1200px){
+    .navbar-expand-lg .navbar-nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 1200px) {
     .main:before {
         content: "";
         position: fixed;
@@ -274,11 +291,11 @@
         left: auto;
         border: none;
         height: 100%;
-        width: 3.75rem;
+        width: 4.75rem;
         background-image: none;
         border-radius: 0;
         z-index: 1;
-        display: inline-block;
+        display: inline-block !important;
     }
 
     .navbar-inner .navbar-toggler {
@@ -312,7 +329,7 @@
     }
 
     .navbar-dark .navbar-toggler-icon {
-        background: #660e0f;
+        background: #f58220;
     }
 
     .navbar-sticky-on .navbar-toggler-icon{
@@ -327,7 +344,7 @@
     .navbar-toggler-icon:before,
     .navbar-toggler-icon:after {
         content: "";
-        background: #660e0f;
+        background: #f58220;
         left: 0;
         height: 100%;
         width: 100%;
@@ -336,7 +353,7 @@
 
     .navbar-dark .navbar-toggler-icon:before,
     .navbar-dark .navbar-toggler-icon:after {
-        background: #660e0f;
+        background: #f58220;
     }
 
     .navbar-sticky-on .navbar-toggler-icon:before,
@@ -369,6 +386,7 @@
         -webkit-transform: scale(0.65) rotate(-45deg);
         transform: scale(0.65) rotate(-45deg);
     }
+   
 }
 
 @media (max-width: 767px) {
@@ -441,15 +459,9 @@
 /* ******************************
 :: 12.0 FOOTER AREA CSS
 ****************************** */
-/* @media only screen and (min-width: 576px) and (max-width: 991px) {
-    .footer-items {
-        margin-bottom: 30px;
-    }
-} */
 
 @media (max-width: 575px) {
     .footer-area .footer-items {
-        /* margin-bottom: 30px; */
         margin-top: 0;
     }
 
@@ -531,6 +543,10 @@
     }
 }
 
+/****************************/
+
+
+
 @media(max-width: 991px){
     .navbar .navbar-nav .nav-link{
         padding: 1rem;
@@ -539,7 +555,7 @@
         color: #fff;
         margin-right: 10px;
         text-align: center;
-        background: #d31f3b;
+        background: #f58220;
         margin-top: 10px;
         text-transform: uppercase;
     }
@@ -733,7 +749,7 @@
 
 @media(max-width: 575px){
     .welcome-intro h1 {
-        font-size: 30px;
+        font-size: 35px;
         margin-bottom: 15px;
     }
     .about-content{
@@ -914,5 +930,69 @@
     .thanks-btn {
         margin-top: 60px;
         margin-bottom: 60px;
+    }
+}
+
+
+@media(max-width: 1200px){
+    .navbar .navbar-nav .nav-item{
+        padding: 0;
+        width: 100%;
+    }
+    .navbar .navbar-nav .nav-link{
+        padding: 1rem !important;
+        border-bottom: 1px solid #eee;
+    }
+    .navbar-expand-lg .navbar-nav li:last-child{
+        max-width: fit-content;
+        background: transparent;
+    }
+    .navbar-expand-lg .navbar-nav li:last-child a{
+        align-items: center;
+    }
+    .navbar-dark .navbar-nav .nav-link-btn{
+        border-radius: 0;
+        border-bottom: none;
+    }
+    .navbar.navbar-dark .nav-link:hover, .navbar.navbar-dark .nav-link:focus, .navbar.navbar-dark .nav-link.active, .navbar.navbar-dark .nav-link.current-menu-item{
+        color: #f58220;
+    }
+}
+
+@media(max-width: 991px){
+    .welcome-intro .intro-head p{
+        color: #fff;
+    }
+    .welcome-intro h1{
+        color: #fff;
+    }
+    .navbar-dark .navbar-toggler{
+        outline: none;
+    }
+    .navbar-inner .navbar-toggler{
+        outline: none;
+    }
+}
+
+@media(max-width: 575px){
+    .navbar-expand-lg .navbar-nav li:last-child{
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        max-width: inherit;
+        margin-left: 0;
+        padding: 1rem !important;
+    }
+    .navbar-expand-lg .navbar-nav li:last-child a{
+        padding: 0.6rem !important;
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .navbar-expand-lg .navbar-nav li:last-child a img{
+        max-width: 20px;
+    }
+    .navbar-toggler-icon{
+        width: 45%;
     }
 }

@@ -101,10 +101,17 @@
         $.preventDefault();
     });
 
+    //Services Box Hover animation
+    $(".service-box .nav-link").hover(function(){
+        $(this).tab("show")
+    })
+
+
+
     // :: 7.0 BANNER SLIDER ACTIVE CODE
-    $('.banner-slider.owl-carousel').owlCarousel({
+    $('.service-slider.owl-carousel').owlCarousel({
         loop: true,
-        margin: 0,
+        margin: 20,
         nav: true,
         dots: false,
         smartSpeed: 2000,
@@ -116,18 +123,16 @@
         // ],
         responsive: {
             0: {
-                items: 1,
-                nav: false,
-                dots: true
+                items: 1
             },
             576: {
                 items: 1
             },
             768: {
-                items: 1
+                items: 2
             },
             992: {
-                items: 1
+                items: 3
             }
         }
     });
@@ -136,8 +141,8 @@
     $('.testi-slider.owl-carousel').owlCarousel({
         loop: true,
         margin: 100,
-        nav: true,
-        dots: false,
+        nav: false,
+        dots: true,
         smartSpeed: 2000,
         autoplay: false,
         autoplayTimeout: 5000,
@@ -217,12 +222,6 @@
             removalDelay: 260,
             mainClass: 'mfp-zoom-in',
         });
-
-    // :: 9.0 COUNTERUP ACTIVE CODE
-    // $('.counter').counterUp({
-    //     delay: 10,
-    //     time: 1000
-    // });
     
     // :: 11.0 NAV TAB HOVER CHANGE IMAGES CODE
     $(".nav-tab-link").hover(function(){

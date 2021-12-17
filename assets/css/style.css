@@ -812,7 +812,7 @@ img {
 
 .download-close{
     float: right;
-    background: #660e0f;
+    background: #f58220;
     border-radius: 45px;
     border: 1px solid transparent;
     width: 46px;
@@ -826,7 +826,7 @@ img {
 }
 
 .download-close:hover{
-    background: #d31f3b;
+    background: #111359;
 }
 
 .download-close span {
@@ -865,7 +865,7 @@ img {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
-    background: linear-gradient(to right, #d31f3b 0%, transparent 100%);
+    background: linear-gradient(to right, #f58220 0%, transparent 100%);
     z-index: 99;
 }
 
@@ -924,7 +924,7 @@ img {
 }
 
 .popup-btn a{
-    background: #d31f3b;
+    background: #f58220;
     color: #fff;
     padding: 12px 50px;
     border-radius: 5px;
@@ -932,7 +932,7 @@ img {
 }
 
 .popup-btn a:hover{
-    background-color: #660e0f;
+    background-color: #111359;
     color: #fff;
 }
 
@@ -945,12 +945,12 @@ img {
 }
 
 .popup-img-main{
-    background-color: #2f9331;
+    background-color: #f58220;
 }
 
 .popup-img{
     /* width: 280px; */
-    background-image: url(../img/courses/music/carnatic-vocal.jpg);
+    background-image: url(../img/bg/popup-bg.jpg);
     height: 100%;
     width: 100%;
     background-size: cover;

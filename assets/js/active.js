@@ -162,35 +162,6 @@
         }
     });
 
-    // :: 9.0 GALLERY SLIDER ACTIVE CODE
-    $('.gallery-slider.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: true,
-        dots: false,
-        smartSpeed: 2000,
-        autoplay: false,
-        autoplayTimeout: 5000,
-        navText: [
-            '<i class="fas fa-caret-left" aria-hidden="true"></i>',
-            '<i class="fas fa-caret-right" aria-hidden="true"></i>'
-        ],
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 2
-            },
-            768: {
-                items: 2
-            },
-            992: {
-                items: 2
-            }
-        }
-    });
-
 
     // :: 14.0 FANCYBOX IMAGE GALLERY
     $('[data-fancybox="images"]').fancybox({
